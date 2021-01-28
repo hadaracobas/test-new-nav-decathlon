@@ -1,44 +1,44 @@
-.nav1Desktop {
+.nav4Desktop {
   padding: 10px 0;
   margin-top: 5px;
 }
 
-.nav1Desktop ul {
+.nav4Desktop ul {
   list-style: none;
 }
 
-.nav1Desktop a {
+.nav4Desktop a {
   text-decoration: none;
   cursor: pointer;
 }
 
-.nav1Desktop__menu {
+.nav4Desktop__menu {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.nav1Desktop__menu > li {
+.nav4Desktop__menu > li {
   margin-right: 70px;
   padding-top: 4px;
 }
 
-#nav1Desktop__submenu--sportarten-title,
-#nav1Desktop__submenu--damen-herren-title,
-#nav1Desktop__submenu--sportzubehor-title {
+#nav4Desktop__submenu--sportarten-title,
+#nav4Desktop__submenu--damen-herren-title,
+#nav4Desktop__submenu--sportzubehor-title {
   color: #242323;
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 16px;
 }
-#nav1Desktop__submenu--sportarten-title:hover,
-#nav1Desktop__submenu--damen-herren-title:hover,
-#nav1Desktop__submenu--sportzubehor-title:hover {
+#nav4Desktop__submenu--sportarten-title:hover,
+#nav4Desktop__submenu--damen-herren-title:hover,
+#nav4Desktop__submenu--sportzubehor-title:hover {
   color: #0082c3;
 }
 
-.nav1Desktop__submenu {
+.nav4Desktop__submenu {
   display: none;
   position: absolute;
   right: 50%;
@@ -52,46 +52,46 @@
   background-color: #fff;
 }
 
-.nav1Desktop__submenu .row {
+.nav4Desktop__submenu .row {
   display: flex;
   margin-left: 16%;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
-.nav1Desktop__submenu .row:first-child {
+.nav4Desktop__submenu .row:first-child {
   margin-bottom: 25px;
 }
-.nav1Desktop__submenu .row > li {
+.nav4Desktop__submenu .row > li {
   min-width: 17%;
 }
 
-#nav1Desktop__submenu--sportzubehor .row > li {
+#nav4Desktop__submenu--sportzubehor .row > li {
   min-width: 20%;
 }
 
-.nav1Desktop__submenu .row li a {
+.nav4Desktop__submenu .row li a {
   color: #242323;
   font-weight: bold;
   font-size: 13px;
 }
-.nav1Desktop__submenu .row li a:hover {
+.nav4Desktop__submenu .row li a:hover {
   color: #0082c3;
 }
-.nav1Desktop__submenu .nav1Desktop__subsubmenu li a {
+.nav4Desktop__submenu .nav4Desktop__subsubmenu li a {
   color: #242323;
   font-weight: 400;
   font-size: 11px;
 }
-.nav1Desktop__submenu .nav1Desktop__subsubmenu li {
+.nav4Desktop__submenu .nav4Desktop__subsubmenu li {
   line-height: 1;
   padding: 4px 0;
 }
 
-/*.nav1Desktop__submenu div li {
+/*.nav4Desktop__submenu div li {
   min-width: 16%;
 }*/
 
-/*.nav1Desktop__subsubmenu {
+/*.nav4Desktop__subsubmenu {
   display: none;
 }*/

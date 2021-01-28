@@ -18,3 +18,11 @@
   height: 400px;
   margin: 25px auto 0 auto;
 }
+
+.app__currentV {
+  color: #242323;
+  font-size: 12px;
+  margin-left: 10px;
+  background-color: #ffea28;
+  padding: 3px;
+}

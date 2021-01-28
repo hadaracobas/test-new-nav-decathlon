@@ -1,149 +1,143 @@
 import React from "react";
 import "./index.css";
 
-function Nav1Desktop() {
+function Nav2Desktop() {
   const handleOpenSportarten = () => {
-    document.getElementById("nav1Desktop__submenu--sportarten").style.display =
+    document.getElementById("nav2Desktop__submenu--sportarten").style.display =
       "block";
   };
   const handleCloseSportarten = () => {
-    document.getElementById("nav1Desktop__submenu--sportarten").style.display =
+    document.getElementById("nav2Desktop__submenu--sportarten").style.display =
       "none";
   };
 
   const handleOpenDamenHerren = () => {
     document.getElementById(
-      "nav1Desktop__submenu--damen-herren"
+      "nav2Desktop__submenu--damen-herren"
     ).style.display = "block";
   };
   const handleCloseDamenHerren = () => {
     document.getElementById(
-      "nav1Desktop__submenu--damen-herren"
+      "nav2Desktop__submenu--damen-herren"
     ).style.display = "none";
   };
 
   const handleOpenSportzubehor = () => {
     document.getElementById(
-      "nav1Desktop__submenu--sportzubehor"
+      "nav2Desktop__submenu--sportzubehor"
     ).style.display = "block";
   };
   const handleCloseSportzubehor = () => {
     document.getElementById(
-      "nav1Desktop__submenu--sportzubehor"
+      "nav2Desktop__submenu--sportzubehor"
     ).style.display = "none";
   };
   return (
-    <div className="nav1Desktop">
-      <ul className="nav1Desktop__menu">
+    <div className="nav2Desktop">
+      <ul className="nav2Desktop__menu">
         <li onMouseLeave={handleCloseSportarten}>
           <a
             href="#"
-            id="nav1Desktop__submenu--sportarten-title"
+            id="nav2Desktop__submenu--sportarten-title"
             onMouseOver={handleOpenSportarten}
           >
             Sportarten{" "}
           </a>
 
           <ul
-            class="nav1Desktop__submenu"
-            id="nav1Desktop__submenu--sportarten"
+            class="nav2Desktop__submenu"
+            id="nav2Desktop__submenu--sportarten"
           >
             <div className="row">
               <li>
                 <a href="javascript:void(0)">Wintersport</a>
-                <ul className="nav1Desktop__subsubmenu">
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Ski</a>
+                    <a href="#">Eislaufen</a>
                   </li>
                   <li>
-                    <a href="#">Tourenski</a>
-                  </li>
-                  <li>
-                    <a href="#">Langlaufski</a>
-                  </li>
-                  <li>
-                    <a href="#">Snowboard</a>
-                  </li>
-                  <li>
-                    <a href="#">Schlittschuhen</a>
+                    <a href="#">Langlaufen</a>
                   </li>
                   <li>
                     <a href="#">Schlitten</a>
                   </li>
                   <li>
-                    <a href="#">Eishockey</a>
+                    <a href="#">Skisport</a>
+                  </li>
+                  <li>
+                    <a href="#">Skitouring</a>
+                  </li>
+                  <li>
+                    <a href="#">Snowboarden</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Bergsport {"&"} Outdoor</a>
-                <ul className="nav1Desktop__subsubmenu">
+                <a href="javascript:void(0)">Outdoor</a>
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Wandern</a>
-                  </li>
-                  <li>
-                    <a href="#">Klettern</a>
+                    <a href="#">Angeln</a>
                   </li>
                   <li>
                     <a href="#">Camping</a>
                   </li>
                   <li>
-                    <a href="#">Canyoning</a>
+                    <a href="#">Jagd </a>
                   </li>
                   <li>
-                    <a href="#">Jagd</a>
+                    <a href="#">Klettern</a>
                   </li>
                   <li>
                     <a href="#">Reiten</a>
                   </li>
                   <li>
-                    <a href="#">Angeln</a>
+                    <a href="#">Wandern</a>
                   </li>
                 </ul>
               </li>
               <li>
                 <a href="javascript:void(0)">Fitness {"&"} Training</a>
-                <ul className="nav1Desktop__subsubmenu">
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
                     <a href="#">Fitness</a>
                   </li>
                   <li>
-                    <a href="#">Yoga</a>
-                  </li>
-                  <li>
-                    <a href="#">Pilates</a>
-                  </li>
-                  <li>
-                    <a href="#">Boxen</a>
+                    <a href="#">Gymnastik</a>
                   </li>
                   <li>
                     <a href="#">Kampfsport</a>
                   </li>
                   <li>
-                    <a href="#">Tanzen {"&"} Gymnastik</a>
+                    <a href="#">Laufen</a>
+                  </li>
+                  <li>
+                    <a href="#">Pilates</a>
+                  </li>
+                  <li>
+                    <a href="#">Tanzen</a>
+                  </li>
+                  <li>
+                    <a href="#">Yoga</a>
                   </li>
                 </ul>
               </li>
               <li>
                 <a href="javascript:void(0)">Radsport</a>
-                <ul className="nav1Desktop__subsubmenu">
+                <ul className="nav2Desktop__subsubmenu">
+                  <li>
+                    <a href="#">Bekleidung</a>
+                  </li>
                   <li>
                     <a href="#">Fahrräder</a>
                   </li>
                   <li>
-                    <a href="#">Fahhradbekleidung</a>
-                  </li>
-                  <li>
-                    <a href="#">Fahrradzubehör</a>
-                  </li>
-                  <li>
-                    <a href="#">Fahrradteilen</a>
-                  </li>
-                  <li>
-                    <a href="#">Fahrradtransport</a>
-                  </li>
-                  <li>
                     <a href="#">Rollentrainer</a>
+                  </li>
+                  <li>
+                    <a href="#">Transport</a>
+                  </li>
+                  <li>
+                    <a href="#">Zubehör</a>
                   </li>
                 </ul>
               </li>
@@ -151,83 +145,52 @@ function Nav1Desktop() {
             {/* end .row */}
             <div className="row">
               <li>
-                <a href="javascript:void(0)">Running</a>
-                <ul className="nav1Desktop__subsubmenu">
+                <a href="javascript:void(0)">Team- {"&"} Schlägersport</a>
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Laufschuhe</a>
-                  </li>
-                  <li>
-                    <a href="#">Laufbekleidung</a>
-                  </li>
-                  <li>
-                    <a href="#">Laufzubehör</a>
-                  </li>
-                  <li>
-                    <a href="#">Trailrunning</a>
-                  </li>
-                  <li>
-                    <a href="#">Triathlon</a>
-                  </li>
-                  <li>
-                    <a href="#">Nordic Walking </a>
-                  </li>
-                  <li>
-                    <a href="#">Leichtathletik </a>
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="javascript:void(0)">Schlager {"&"} Teamsport</a>
-                <ul className="nav1Desktop__subsubmenu">
-                  <li>
-                    <a href="#">Fussball</a>
-                  </li>
-                  <li>
-                    <a href="#">Tennis</a>
+                    <a href="#">Badminton</a>
                   </li>
                   <li>
                     <a href="#">Basketball</a>
                   </li>
                   <li>
-                    <a href="#">Tischtennis</a>
+                    <a href="#">Fussball </a>
                   </li>
                   <li>
-                    <a href="#">Volleyball</a>
+                    <a href="#">Golf</a>
                   </li>
                   <li>
-                    <a href="#">Badminton </a>
+                    <a href="#">Squash</a>
                   </li>
                   <li>
-                    <a href="#">Squash </a>
+                    <a href="#">Tennis </a>
                   </li>
                   <li>
-                    <a href="#">Mehr Sportarten </a>
+                    <a href="#">Tischtennis </a>
+                  </li>
+                  <li>
+                    <a href="#">Volleyball </a>
                   </li>
                 </ul>
               </li>
+
               <li>
                 <a href="javascript:void(0)">Wassersport</a>
-                <ul className="nav1Desktop__subsubmenu">
-                  <li>
-                    <a href="#">Schwimmen</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Strandbekleidung {"&"} <br></br>Strandzubehör
-                    </a>
-                  </li>
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
                     <a href="#">SUP {"&"} Kajak</a>
                   </li>
                   <li>
-                    <a href="#">Schnorcheln</a>
+                    <a href="#">Schwimmen</a>
+                  </li>
+                  <li>
+                    <a href="#">Schorcheln</a>
                   </li>
                   <li>
                     <a href="#">Tauchen</a>
                   </li>
                   <li>
-                    <a href="#">Surfen </a>
+                    <a href="#">Surfen</a>
                   </li>
                   <li>
                     <a href="#">Segeln </a>
@@ -235,10 +198,10 @@ function Nav1Desktop() {
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Freizeit {"&"} Spielen</a>
-                <ul className="nav1Desktop__subsubmenu">
+                <a href="javascript:void(0)">Freizeit {"&"} Spiele</a>
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Golf</a>
+                    <a href="#">Tischtennis</a>
                   </li>
                   <li>
                     <a href="#">Scooter</a>
@@ -255,8 +218,13 @@ function Nav1Desktop() {
                   <li>
                     <a href="#">Bogenschiessen </a>
                   </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Sportarten Überblick</a>
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Übrige Spielen </a>
+                    <a href="#">Über 70 Sportarten</a>
                   </li>
                 </ul>
               </li>
@@ -269,18 +237,18 @@ function Nav1Desktop() {
           onMouseOut={handleCloseDamenHerren}
           onMouseOver={handleOpenDamenHerren}
         >
-          <a href="#" id="nav1Desktop__submenu--damen-herren-title">
+          <a href="#" id="nav2Desktop__submenu--damen-herren-title">
             Damen / Herren / Kinder{" "}
           </a>
 
           <ul
-            className="nav1Desktop__submenu"
-            id="nav1Desktop__submenu--damen-herren"
+            className="nav2Desktop__submenu"
+            id="nav2Desktop__submenu--damen-herren"
           >
             <div className="row">
               <li>
                 <a href="javascript:void(0)">Schuhe</a>
-                <ul className="nav1Desktop__subsubmenu">
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
                     <a href="#">Wanderschuhe</a>
                   </li>
@@ -300,7 +268,7 @@ function Nav1Desktop() {
               </li>
               <li>
                 <a href="javascript:void(0)">Oberbekleidung</a>
-                <ul className="nav1Desktop__subsubmenu">
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
                     <a href="#">Jacken</a>
                   </li>
@@ -317,7 +285,7 @@ function Nav1Desktop() {
               </li>
               <li>
                 <a href="javascript:void(0)">Hosen</a>
-                <ul className="nav1Desktop__subsubmenu">
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
                     <a href="#">Lange Hosen</a>
                   </li>
@@ -345,7 +313,7 @@ function Nav1Desktop() {
 
         <li onMouseLeave={handleCloseSportzubehor}>
           <a
-            id="nav1Desktop__submenu--sportzubehor-title"
+            id="nav2Desktop__submenu--sportzubehor-title"
             href="#"
             onMouseOver={handleOpenSportzubehor}
           >
@@ -353,13 +321,13 @@ function Nav1Desktop() {
           </a>
 
           <ul
-            className="nav1Desktop__submenu"
-            id="nav1Desktop__submenu--sportzubehor"
+            className="nav2Desktop__submenu"
+            id="nav2Desktop__submenu--sportzubehor"
           >
             <div className="row">
               <li>
                 <a href="javascript:void(0)">Sport Und Reisetaschen</a>
-                <ul className="nav1Desktop__subsubmenu">
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
                     <a href="#">Rucksäcke </a>
                   </li>
@@ -375,7 +343,7 @@ function Nav1Desktop() {
                 <a href="javascript:void(0)">
                   Sportnahrung, Proteine,<br></br> Supplemente
                 </a>
-                <ul className="nav1Desktop__subsubmenu">
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
                     <a href="#">
                       Vitamine,<br></br> Nahrungsergänzung{" "}
@@ -394,7 +362,7 @@ function Nav1Desktop() {
               </li>
               <li>
                 <a href="javascript:void(0)">Gesundheit, Pflege</a>
-                <ul className="nav1Desktop__subsubmenu">
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
                     <a href="#">Regeneration </a>
                   </li>
@@ -412,7 +380,7 @@ function Nav1Desktop() {
 
               <li>
                 <a href="javascript:void(0)">Sport-, Sonnenbrillen</a>
-                <ul className="nav1Desktop__subsubmenu">
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
                     <a href="#">Sportbrillen </a>
                   </li>
@@ -429,7 +397,7 @@ function Nav1Desktop() {
             <div className="row">
               <li>
                 <a href="javascript:void(0)">Elektronik</a>
-                <ul className="nav1Desktop__subsubmenu">
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
                     <a href="#">Sportuhren </a>
                   </li>
@@ -452,7 +420,7 @@ function Nav1Desktop() {
               </li>
               <li>
                 <a href="javascript:void(0)">Pokale, Medaillen</a>
-                <ul className="nav1Desktop__subsubmenu">
+                <ul className="nav2Desktop__subsubmenu">
                   <li>
                     <a href="#">Medaillen </a>
                   </li>
@@ -476,4 +444,4 @@ function Nav1Desktop() {
   );
 }
 
-export default Nav1Desktop;
+export default Nav2Desktop;

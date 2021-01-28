@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./index.css";
 import Nav1Desktop from "../Nav1Desktop";
+import Nav2Desktop from "../Nav2Desktop";
+import Nav3Desktop from "../Nav3Desktop";
+import Nav4Desktop from "../Nav4Desktop";
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
+import ChangeNavDropdown from "../ChangeNavDropdown";
+import { SignalCellularNoSimOutlined } from "@material-ui/icons";
 
-function HeaderDesktop() {
+function HeaderDesktop(props) {
+  const [relNav, setRelNav] = useState(1);
+  const [gettingRelNavNum, setGettingRelNavNum] = useState(1);
+
+  const getRelNavDisplayNum = (relNavNum) => {
+    setGettingRelNavNum(relNavNum);
+    props.sendNavNameUpToApp(relNavNum);
+  };
+
+  useEffect(() => {
+    setRelNav(gettingRelNavNum);
+  }, [gettingRelNavNum]);
+
   return (
     <div className="header-desktop">
       <div className="header-desktop__top">
@@ -19,11 +36,22 @@ function HeaderDesktop() {
           </div>
         </div>
         <div className="header-desktop__right">
-          <ShoppingCartOutlinedIcon />
+          <ShoppingCartOutlinedIcon style={{ marginRight: "20px" }} />
+          <div>
+            <ChangeNavDropdown sendStateRelNavUp={getRelNavDisplayNum} />
+          </div>
         </div>
       </div>
 
-      <Nav1Desktop />
+      {relNav === 1 ? (
+        <Nav1Desktop />
+      ) : relNav === 2 ? (
+        <Nav2Desktop />
+      ) : relNav === 3 ? (
+        <Nav3Desktop />
+      ) : relNav === 4 ? (
+        <Nav4Desktop />
+      ) : null}
     </div>
   );
 }
