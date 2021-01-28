@@ -349,7 +349,7 @@ function Nav1Desktop() {
             href="#"
             onMouseOver={handleOpenSportzubehor}
           >
-            Sporzubehör {"&"} Ernahrung{" "}
+            Sportzubehör {"&"} Ernährung
           </a>
 
           <ul

@@ -22,7 +22,10 @@
 .app__currentV {
   color: #242323;
   font-size: 12px;
-  margin-left: 10px;
+
   background-color: #ffea28;
   padding: 3px;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
 }
