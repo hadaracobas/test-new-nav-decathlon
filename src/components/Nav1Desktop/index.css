@@ -1,0 +1,97 @@
+.nav1Desktop {
+  padding: 10px 0;
+  margin-top: 5px;
+}
+
+.nav1Desktop ul {
+  list-style: none;
+}
+
+.nav1Desktop a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav1Desktop__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav1Desktop__menu > li {
+  margin-right: 70px;
+  padding-top: 4px;
+}
+
+#nav1Desktop__submenu--sportarten-title,
+#nav1Desktop__submenu--damen-herren-title,
+#nav1Desktop__submenu--sportzubehor-title {
+  color: #242323;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 16px;
+}
+#nav1Desktop__submenu--sportarten-title:hover,
+#nav1Desktop__submenu--damen-herren-title:hover,
+#nav1Desktop__submenu--sportzubehor-title:hover {
+  color: #0082c3;
+}
+
+.nav1Desktop__submenu {
+  display: none;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding: 10px;
+  padding-top: 50px;
+  overflow-x: hidden;
+  box-shadow: 0 2px 1px -2px lightgray;
+  background-color: #fff;
+}
+
+.nav1Desktop__submenu .row {
+  display: flex;
+  margin-left: 80px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.nav1Desktop__submenu .row:first-child {
+  margin-bottom: 25px;
+}
+.nav1Desktop__submenu .row > li {
+  min-width: 17%;
+}
+
+#nav1Desktop__submenu--sportzubehor .row > li {
+  min-width: 20%;
+}
+
+.nav1Desktop__submenu .row li a {
+  color: #242323;
+  font-weight: bold;
+  font-size: 15px;
+}
+.nav1Desktop__submenu .row li a:hover {
+  color: #0082c3;
+}
+.nav1Desktop__submenu .nav1Desktop__subsubmenu li a {
+  color: #242323;
+  font-weight: 400;
+  font-size: 13px;
+}
+.nav1Desktop__submenu .nav1Desktop__subsubmenu li {
+  line-height: 1;
+  padding: 4px 0;
+}
+
+/*.nav1Desktop__submenu div li {
+  min-width: 16%;
+}*/
+
+/*.nav1Desktop__subsubmenu {
+  display: none;
+}*/
