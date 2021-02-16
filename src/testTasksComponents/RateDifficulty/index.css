@@ -25,6 +25,11 @@
   color: #242323;
 }
 
+.rateDifficulty__rate:active {
+  background-color: #ffea28;
+  color: #242323;
+}
+
 .rateDifficulty__rateDisplayDiff {
   color: lightgray;
   /* margin: 0 30px;*/
