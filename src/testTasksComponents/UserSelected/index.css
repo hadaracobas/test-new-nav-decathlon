@@ -1,0 +1,20 @@
+.userSelected {
+  /* padding: 40px;
+  text-align: center;
+  margin-top: 40px;
+  border: 1px solid red;*/
+}
+
+.userSelected__title {
+  /*border: 1px solid green;*/
+  color: #242323;
+  font-size: 28px;
+}
+
+.userSelected__tryAgainAWrapper {
+  margin-top: 40px;
+}
+
+.userSelected__tryAgainAWrapper a {
+  color: #0082c3;
+}

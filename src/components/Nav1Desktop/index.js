@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-function Nav1Desktop() {
+function Nav1Desktop(props) {
   const handleOpenSportarten = () => {
     document.getElementById("nav1Desktop__submenu--sportarten").style.display =
       "block";
@@ -32,6 +32,7 @@ function Nav1Desktop() {
       "nav1Desktop__submenu--sportzubehor"
     ).style.display = "none";
   };
+
   return (
     <div className="nav1Desktop">
       <ul className="nav1Desktop__menu">
@@ -53,25 +54,60 @@ function Nav1Desktop() {
                 <a href="javascript:void(0)">Wintersport</a>
                 <ul className="nav1Desktop__subsubmenu">
                   <li>
-                    <a href="#">Ski</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Ski
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Tourenski</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Tourenski
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Langlaufski</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Langlaufski
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Snowboard</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Snowboard
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Schlittschuhen</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Schlittschuhen
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Schlitten</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Schlitten
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Eishockey</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Eishockey
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -79,25 +115,60 @@ function Nav1Desktop() {
                 <a href="javascript:void(0)">Bergsport {"&"} Outdoor</a>
                 <ul className="nav1Desktop__subsubmenu">
                   <li>
-                    <a href="#">Wandern</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Wandern
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Klettern</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Klettern
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Camping</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Camping
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Canyoning</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Canyoning
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Jagd</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Jagd
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Reiten</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Reiten
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Angeln</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Angeln
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -105,22 +176,52 @@ function Nav1Desktop() {
                 <a href="javascript:void(0)">Fitness {"&"} Training</a>
                 <ul className="nav1Desktop__subsubmenu">
                   <li>
-                    <a href="#">Fitness</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Fitness
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Yoga</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Yoga
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Pilates</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Pilates
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Boxen</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Boxen
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Kampfsport</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Kampfsport
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Tanzen {"&"} Gymnastik</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Tanzen {"&"} Gymnastik
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -128,22 +229,52 @@ function Nav1Desktop() {
                 <a href="javascript:void(0)">Radsport</a>
                 <ul className="nav1Desktop__subsubmenu">
                   <li>
-                    <a href="#">Fahrräder</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Fahrräder
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Fahhradbekleidung</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Fahhradbekleidung
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Fahrradzubehör</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Fahrradzubehör
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Fahrradteilen</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Fahrradteilen
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Fahrradtransport</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Fahrradtransport
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Rollentrainer</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Rollentrainer
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -154,25 +285,60 @@ function Nav1Desktop() {
                 <a href="javascript:void(0)">Running</a>
                 <ul className="nav1Desktop__subsubmenu">
                   <li>
-                    <a href="#">Laufschuhe</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Laufschuhe
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Laufbekleidung</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Laufbekleidung
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Laufzubehör</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Laufzubehör
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Trailrunning</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Trailrunning
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Triathlon</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Triathlon
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Nordic Walking </a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Nordic Walking{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Leichtathletik </a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Leichtathletik{" "}
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -181,28 +347,68 @@ function Nav1Desktop() {
                 <a href="javascript:void(0)">Schlager {"&"} Teamsport</a>
                 <ul className="nav1Desktop__subsubmenu">
                   <li>
-                    <a href="#">Fussball</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Fussball
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Tennis</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Tennis
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Basketball</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Basketball
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Tischtennis</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Tischtennis
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Volleyball</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Volleyball
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Badminton </a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Badminton{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Squash </a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Squash{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Mehr Sportarten </a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Mehr Sportarten{" "}
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -210,27 +416,60 @@ function Nav1Desktop() {
                 <a href="javascript:void(0)">Wassersport</a>
                 <ul className="nav1Desktop__subsubmenu">
                   <li>
-                    <a href="#">Schwimmen</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Schwimmen
+                    </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
                       Strandbekleidung {"&"} <br></br>Strandzubehör
                     </a>
                   </li>
                   <li>
-                    <a href="#">SUP {"&"} Kajak</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      SUP {"&"} Kajak
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Schnorcheln</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Schnorcheln
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Tauchen</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Tauchen
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Surfen </a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Surfen{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Segeln </a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Segeln{" "}
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -238,25 +477,60 @@ function Nav1Desktop() {
                 <a href="javascript:void(0)">Freizeit {"&"} Spielen</a>
                 <ul className="nav1Desktop__subsubmenu">
                   <li>
-                    <a href="#">Golf</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Golf
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Scooter</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Scooter
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Inline Skating</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Inline Skating
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Darts</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Darts
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Skateboarding</a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Skateboarding
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Bogenschiessen </a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Bogenschiessen{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Übrige Spielen </a>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={props.onClickgetCategoryName}
+                    >
+                      Übrige Spielen{" "}
+                    </a>
                   </li>
                 </ul>
               </li>

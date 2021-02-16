@@ -1,0 +1,21 @@
+.userNavPrefer__version {
+  margin-bottom: 36px;
+}
+
+.userNavPrefer__versionTitle {
+  color: #0082c3;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 8px 4px;
+  transition: all 300ms ease-out;
+}
+
+.userNavPrefer__versionTitle:hover {
+  transform: scale(1.1);
+}
+
+.userNavPrefer__versionImg {
+  max-width: 80%;
+  height: auto;
+  border: 1px solid lightgray;
+}

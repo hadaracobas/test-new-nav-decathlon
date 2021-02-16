@@ -1,0 +1,13 @@
+#getUserEmailInput {
+  height: 25px;
+  width: 260px;
+  padding: 4px;
+  border: 1px solid #0082c3;
+}
+
+.getUserEmail__notePragraph {
+  font-size: 11px;
+  color: gray;
+  margin-top: 14px;
+  margin-bottom: 30px;
+}

@@ -43,13 +43,13 @@ function HeaderDesktop(props) {
         </div>
       </div>
 
-      {relNav === 1 ? (
-        <Nav1Desktop />
-      ) : relNav === 2 ? (
+      {props.relNav === 1 ? (
+        <Nav1Desktop onClickgetCategoryName={props.onClickgetCategoryName} />
+      ) : props.relNav === 2 ? (
         <Nav2Desktop />
-      ) : relNav === 3 ? (
+      ) : props.relNav === 3 ? (
         <Nav3Desktop />
-      ) : relNav === 4 ? (
+      ) : props.relNav === 4 ? (
         <Nav4Desktop />
       ) : null}
     </div>
