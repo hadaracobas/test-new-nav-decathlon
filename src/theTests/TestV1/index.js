@@ -14,7 +14,7 @@ import axios from "axios";
 
 function TestV1() {
   // GENERAL STATES
-  const [stepNumber, setStepNumber] = useState(16);
+  const [stepNumber, setStepNumber] = useState(1);
   const [startCountingTime, setStartCountingTime] = useState(0);
   const [intervalState, setIntervalState] = useState();
   // STATES TASK 1
@@ -163,7 +163,37 @@ function TestV1() {
     }
   };
 
-  console.log("get user email: ", getUserEmail);
+  // SEND DATA TO DATABASE - GOOGLE SHEET
+  const submitDataToDatabase = (e) => {
+    e.preventDefault();
+    axios
+      .post(
+        "https://sheet.best/api/sheets/b2fa7a6e-f53d-40bf-86f7-34557ebc33b9",
+        {
+          navVersion: "1",
+          lookForRunningShoesAnswer: task1RunningShoes,
+          lookForRunningShoesAnswerTime: endCountingTimeTask1,
+          lookForMountainbikeAnswer: task2MountainBike,
+          lookForMountainbikeAnswerTime: endCountingTimeTask2,
+          lookForWeightsAnswer: task3Weights,
+          lookForWeightsAnswerTime: endCountingTimeTask3,
+          lookForSleepingbagAnswer: task4SleepingBag,
+          lookForSleepingbagAnswerTime: endCountingTimeTask4,
+          howEasyWasItToFindOneToFive: rateDiff,
+          menuPrefer: userNavPrefer,
+          email: getUserEmail,
+        }
+      )
+      .then(function (response) {
+        console.log(response);
+
+        nextStepHandleOnClick();
+      })
+      .catch(function (error) {
+        console.log(error);
+        alert("An error has occurred");
+      });
+  };
 
   return (
     <div className="testV1">
@@ -246,7 +276,10 @@ function TestV1() {
           continueOnClick={nextStepHandleOnClick}
         />
       ) : stepNumber === 16 ? (
-        <GetUserEmail emailOnChange={(e) => setGetUserEmail(e.target.value)} />
+        <GetUserEmail
+          emailOnChange={(e) => setGetUserEmail(e.target.value)}
+          finishOnClick={submitDataToDatabase}
+        />
       ) : stepNumber === 17 ? (
         <EndPage />
       ) : null}
