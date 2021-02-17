@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import Popup from "../../materialUiComponents/Popup";
 import "./index.css";
 
 function GetUserEmail(props) {
+  const [openPop, setOpenPop] = useState(false);
+
+  const handleOpenPop = () => {
+    setOpenPop(true);
+  };
+
+  const handleClosePop = () => {
+    setOpenPop(false);
+  };
   return (
     <div className="getUserEmail taskComponentContainer">
       <h2 className="title">
@@ -15,7 +25,10 @@ function GetUserEmail(props) {
         onChange={props.emailOnChange}
       />
       <p className="getUserEmail__notePragraph">
-        * Mit Angabe deiner E-Mail stimmst du unseren Datenschutzbestimmungen
+        * Mit Angabe deiner E-Mail stimmst du unseren{" "}
+        <a href="#" onClick={handleOpenPop} style={{ color: "#0082c3" }}>
+          Teilnahmebedingungen
+        </a>{" "}
         zu. Wir verwenden die E-Mail-Adresse ausschließlich, um die Gewinner zu
         kontaktieren.
       </p>
@@ -26,6 +39,7 @@ function GetUserEmail(props) {
       >
         Abschließen und am Gewinnspiel teilnehmen
       </a>
+      <Popup open={openPop} handleClose={handleClosePop} />
     </div>
   );
 }

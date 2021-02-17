@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-function Nav2Desktop() {
+function Nav2Desktop(props) {
   const handleOpenSportarten = () => {
     document.getElementById("nav2Desktop__submenu--sportarten").style.display =
       "block";
@@ -21,6 +21,37 @@ function Nav2Desktop() {
       "nav2Desktop__submenu--damen-herren"
     ).style.display = "none";
   };
+
+  /* ------------- */
+  const handleOpenDamen = () => {
+    document.getElementById("nav2Desktop__submenu--damen").style.display =
+      "block";
+  };
+  const handleCloseDamen = () => {
+    document.getElementById("nav2Desktop__submenu--damen").style.display =
+      "none";
+  };
+
+  //--
+  const handleOpenHerren = () => {
+    document.getElementById("nav2Desktop__submenu--herren").style.display =
+      "block";
+  };
+  const handleCloseHerren = () => {
+    document.getElementById("nav2Desktop__submenu--herren").style.display =
+      "none";
+  };
+  //--
+  const handleOpenKinder = () => {
+    document.getElementById("nav2Desktop__submenu--kinder").style.display =
+      "block";
+  };
+  const handleCloseKinder = () => {
+    document.getElementById("nav2Desktop__submenu--kinder").style.display =
+      "none";
+  };
+
+  /* ------------- */
 
   const handleOpenSportzubehor = () => {
     document.getElementById(
@@ -50,94 +81,234 @@ function Nav2Desktop() {
           >
             <div className="row">
               <li>
-                <a href="javascript:void(0)">Wintersport</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameSportarten}
+                >
+                  Wintersport
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Eislaufen</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Eislaufen
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Langlaufen</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Langlaufen
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Schlitten</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Schlitten
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Skisport</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Skisport
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Skitouring</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Skitouring
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Snowboarden</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Snowboarden
+                    </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Outdoor</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameSportarten}
+                >
+                  Outdoor
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Angeln</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Angeln
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Camping</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Camping
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Jagd </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Jagd{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Klettern</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Klettern
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Reiten</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Reiten
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Wandern</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Wandern
+                    </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Fitness {"&"} Training</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameSportarten}
+                >
+                  Fitness {"&"} Training
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Fitness</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Fitness
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Gymnastik</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Gymnastik
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Kampfsport</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Kampfsport
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Laufen</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Laufen
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Pilates</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Pilates
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Tanzen</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Tanzen
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Yoga</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Yoga
+                    </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Radsport</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameSportarten}
+                >
+                  Radsport
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Bekleidung</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Bekleidung
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Fahrräder</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Fahrräder
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Rollentrainer</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Rollentrainer
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Transport</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Transport
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Zubehör</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Zubehör
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -145,86 +316,211 @@ function Nav2Desktop() {
             {/* end .row */}
             <div className="row">
               <li>
-                <a href="javascript:void(0)">Team- {"&"} Schlägersport</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameSportarten}
+                >
+                  Team- {"&"} Schlägersport
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Badminton</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Badminton
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Basketball</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Basketball
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Fussball </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Fussball{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Golf</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Golf
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Squash</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Squash
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Tennis </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Tennis{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Tischtennis </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Tischtennis{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Volleyball </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Volleyball{" "}
+                    </a>
                   </li>
                 </ul>
               </li>
 
               <li>
-                <a href="javascript:void(0)">Wassersport</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameSportarten}
+                >
+                  Wassersport
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">SUP {"&"} Kajak</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      SUP {"&"} Kajak
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Schwimmen</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Schwimmen
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Schorcheln</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Schorcheln
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Tauchen</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Tauchen
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Surfen</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Surfen
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Segeln </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Segeln{" "}
+                    </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Freizeit {"&"} Spiele</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameSportarten}
+                >
+                  Freizeit {"&"} Spiele
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Tischtennis</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Tischtennis
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Scooter</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Scooter
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Inline Skating</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Inline Skating
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Darts</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Darts
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Skateboarding</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Skateboarding
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Bogenschiessen </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Bogenschiessen{" "}
+                    </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Sportarten Überblick</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameSportarten}
+                >
+                  Sportarten Überblick
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Über 70 Sportarten</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportarten}
+                    >
+                      Über 70 Sportarten
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -233,83 +529,500 @@ function Nav2Desktop() {
           </ul>
         </li>
 
-        <li
-          onMouseOut={handleCloseDamenHerren}
-          onMouseOver={handleOpenDamenHerren}
-        >
+        <li onMouseOut={handleCloseDamen} onMouseOver={handleOpenDamen}>
           <a href="#" id="nav2Desktop__submenu--damen-herren-title">
-            Damen / Herren / Kinder{" "}
+            Damen
+          </a>
+
+          <ul className="nav2Desktop__submenu" id="nav2Desktop__submenu--damen">
+            <div className="row">
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameDamen}
+                >
+                  Schuhe
+                </a>
+                <ul className="nav2Desktop__subsubmenu">
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameDamen}
+                    >
+                      Wanderschuhe
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameDamen}
+                    >
+                      Freizeitschuhe
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameDamen}
+                    >
+                      Hallenschuhe
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameDamen}
+                    >
+                      Sandalen / Badeschlapfen
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameDamen}
+                    >
+                      Laufschuhe
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameDamen}
+                >
+                  Oberbekleidung
+                </a>
+                <ul className="nav2Desktop__subsubmenu">
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameDamen}
+                    >
+                      Jacken
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameDamen}
+                    >
+                      Fleece, Pullover
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameDamen}
+                    >
+                      Shirts
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameDamen}
+                    >
+                      Sport-BHs, Bustiers
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameDamen}
+                >
+                  Hosen
+                </a>
+                <ul className="nav2Desktop__subsubmenu">
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameDamen}
+                    >
+                      Lange Hosen
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameDamen}
+                    >
+                      Tights{" "}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameDamen}
+                    >
+                      Shorts
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameDamen}
+                    >
+                      Röcke
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameDamen}
+                >
+                  Badebekleidung{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameDamen}
+                >
+                  Funktionsbekleidung{" "}
+                </a>
+              </li>
+            </div>
+            {/* end .row */}
+          </ul>
+        </li>
+
+        {/* ------------- */}
+        <li onMouseOut={handleCloseHerren} onMouseOver={handleOpenHerren}>
+          <a href="#" id="nav2Desktop__submenu--damen-herren-title">
+            Herren
           </a>
 
           <ul
             className="nav2Desktop__submenu"
-            id="nav2Desktop__submenu--damen-herren"
+            id="nav2Desktop__submenu--herren"
           >
             <div className="row">
               <li>
-                <a href="javascript:void(0)">Schuhe</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameHerren}
+                >
+                  Schuhe
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Wanderschuhe</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameHerren}
+                    >
+                      Wanderschuhe
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Freizeitschuhe</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameHerren}
+                    >
+                      Freizeitschuhe
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Hallenschuhe</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameHerren}
+                    >
+                      Hallenschuhe
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Sandalen / Badeschlapfen</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameHerren}
+                    >
+                      Sandalen / Badeschlapfen
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Laufschuhe</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameHerren}
+                    >
+                      Laufschuhe
+                    </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Oberbekleidung</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameHerren}
+                >
+                  Oberbekleidung
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Jacken</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameHerren}
+                    >
+                      Jacken
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Fleece, Pullover</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameHerren}
+                    >
+                      Fleece, Pullover
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Shirts</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameHerren}
+                    >
+                      Shirts
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Sport-BHs, Bustiers</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameHerren}
+                    >
+                      Sport-BHs, Bustiers
+                    </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Hosen</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameHerren}
+                >
+                  Hosen
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Lange Hosen</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameHerren}
+                    >
+                      Lange Hosen
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Tights </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameHerren}
+                    >
+                      Tights{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Shorts</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameHerren}
+                    >
+                      Shorts
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Röcke</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameHerren}
+                    >
+                      Röcke
+                    </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Badebekleidung </a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameHerren}
+                >
+                  Badebekleidung{" "}
+                </a>
               </li>
               <li>
-                <a href="javascript:void(0)">Funktionsbekleidung </a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameHerren}
+                >
+                  Funktionsbekleidung{" "}
+                </a>
               </li>
             </div>
             {/* end .row */}
           </ul>
         </li>
+
+        <li onMouseOut={handleCloseKinder} onMouseOver={handleOpenKinder}>
+          <a href="#" id="nav2Desktop__submenu--damen-herren-title">
+            Kinder
+          </a>
+
+          <ul
+            className="nav2Desktop__submenu"
+            id="nav2Desktop__submenu--kinder"
+          >
+            <div className="row">
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameKinder}
+                >
+                  Schuhe
+                </a>
+                <ul className="nav2Desktop__subsubmenu">
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameKinder}
+                    >
+                      Wanderschuhe
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameKinder}
+                    >
+                      Freizeitschuhe
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameKinder}
+                    >
+                      Hallenschuhe
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameKinder}
+                    >
+                      Sandalen / Badeschlapfen
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameKinder}
+                    >
+                      Laufschuhe
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameKinder}
+                >
+                  Oberbekleidung
+                </a>
+                <ul className="nav2Desktop__subsubmenu">
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameKinder}
+                    >
+                      Jacken
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameKinder}
+                    >
+                      Fleece, Pullover
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameKinder}
+                    >
+                      Shirts
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameKinder}
+                    >
+                      Sport-BHs, Bustiers
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameKinder}
+                >
+                  Hosen
+                </a>
+                <ul className="nav2Desktop__subsubmenu">
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameKinder}
+                    >
+                      Lange Hosen
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameKinder}
+                    >
+                      Tights{" "}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameKinder}
+                    >
+                      Shorts
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameKinder}
+                    >
+                      Röcke
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameKinder}
+                >
+                  Badebekleidung{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameKinder}
+                >
+                  Funktionsbekleidung{" "}
+                </a>
+              </li>
+            </div>
+            {/* end .row */}
+          </ul>
+        </li>
+
+        {/* ------------- */}
 
         <li onMouseLeave={handleCloseSportzubehor}>
           <a
@@ -326,69 +1039,155 @@ function Nav2Desktop() {
           >
             <div className="row">
               <li>
-                <a href="javascript:void(0)">Sport Und Reisetaschen</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameSportzubehor}
+                >
+                  Sport Und Reisetaschen
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Rucksäcke </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Rucksäcke{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Taschen </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Taschen{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Gepäckzubehör</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Gepäckzubehör
+                    </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameSportzubehor}
+                >
                   Sportnahrung, Proteine,<br></br> Supplemente
                 </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
                       Vitamine,<br></br> Nahrungsergänzung{" "}
                     </a>
                   </li>
                   <li>
-                    <a href="#">Riegel, Energie Gels </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Riegel, Energie Gels{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Sportgetränke</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Sportgetränke
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Sonstiges</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Sonstiges
+                    </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Gesundheit, Pflege</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameSportzubehor}
+                >
+                  Gesundheit, Pflege
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Regeneration </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Regeneration{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Pflege </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Pflege{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Bandagen</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Bandagen
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Erste Hilfe</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Erste Hilfe
+                    </a>
                   </li>
                 </ul>
               </li>
 
               <li>
-                <a href="javascript:void(0)">Sport-, Sonnenbrillen</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameSportzubehor}
+                >
+                  Sport-, Sonnenbrillen
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Sportbrillen </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Sportbrillen{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Sonnenbrillen Freizeit </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Sonnenbrillen Freizeit{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Brillenzubehör</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Brillenzubehör
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -396,44 +1195,104 @@ function Nav2Desktop() {
             {/* end .row */}
             <div className="row">
               <li>
-                <a href="javascript:void(0)">Elektronik</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameSportzubehor}
+                >
+                  Elektronik
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Sportuhren </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Sportuhren{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Messgeräte, Wearables </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Messgeräte, Wearables{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Navigation, Outdoor</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Navigation, Outdoor
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Lampen, Ferngläser</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Lampen, Ferngläser
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Elektronikzubehör</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Elektronikzubehör
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Multimedia</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Multimedia
+                    </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Pokale, Medaillen</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameSportzubehor}
+                >
+                  Pokale, Medaillen
+                </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
-                    <a href="#">Medaillen </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Medaillen{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Pokale </a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Pokale{" "}
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Medaillenbänder</a>
+                    <a
+                      href="javascript:void(0)"
+                      onClick={props.onClickgetCategoryNameSportzubehor}
+                    >
+                      Medaillenbänder
+                    </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Spiele</a>
+                <a
+                  href="javascript:void(0)"
+                  onClick={props.onClickgetCategoryNameSportzubehor}
+                >
+                  Spiele
+                </a>
               </li>
             </div>
             {/* end .row */}

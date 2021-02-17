@@ -41,7 +41,7 @@ function Nav1Desktop(props) {
     document.getElementById("nav1Desktop__submenu--herren").style.display =
       "none";
   };
-
+  //--
   const handleOpenKinder = () => {
     document.getElementById("nav1Desktop__submenu--kinder").style.display =
       "block";

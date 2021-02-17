@@ -70,11 +70,41 @@ function HeaderDesktop(props) {
           }
         />
       ) : props.relNav === 2 ? (
-        <Nav2Desktop />
+        <Nav2Desktop
+          onClickgetCategoryNameSportarten={
+            props.onClickgetCategoryNameSportarten
+          }
+          onClickgetCategoryNameDamen={props.onClickgetCategoryNameDamen}
+          onClickgetCategoryNameHerren={props.onClickgetCategoryNameHerren}
+          onClickgetCategoryNameKinder={props.onClickgetCategoryNameKinder}
+          onClickgetCategoryNameSportzubehor={
+            props.onClickgetCategoryNameSportzubehor
+          }
+        />
       ) : props.relNav === 3 ? (
-        <Nav3Desktop />
+        <Nav3Desktop
+          onClickgetCategoryNameSportarten={
+            props.onClickgetCategoryNameSportarten
+          }
+          onClickgetCategoryNameDamen={props.onClickgetCategoryNameDamen}
+          onClickgetCategoryNameHerren={props.onClickgetCategoryNameHerren}
+          onClickgetCategoryNameKinder={props.onClickgetCategoryNameKinder}
+          onClickgetCategoryNameSportzubehor={
+            props.onClickgetCategoryNameSportzubehor
+          }
+        />
       ) : props.relNav === 4 ? (
-        <Nav4Desktop />
+        <Nav4Desktop
+          onClickgetCategoryNameSportarten={
+            props.onClickgetCategoryNameSportarten
+          }
+          onClickgetCategoryNameDamen={props.onClickgetCategoryNameDamen}
+          onClickgetCategoryNameHerren={props.onClickgetCategoryNameHerren}
+          onClickgetCategoryNameKinder={props.onClickgetCategoryNameKinder}
+          onClickgetCategoryNameSportzubehor={
+            props.onClickgetCategoryNameSportzubehor
+          }
+        />
       ) : null}
     </div>
   );

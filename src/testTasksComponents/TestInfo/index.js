@@ -6,9 +6,9 @@ function TestInfo(props) {
     <div className="testInfo">
       <h2 className="testInfo__title">Wir testen eine neue Navigation!</h2>
       <p className="testInfo__paragraph">
-        Liebe Sportler,<br></br> damit du auf unserer Website noch schneller an
-        deine Lieblingsprodukte kommst, wollen wir für dich eine neue
-        Navigationsstruktur erstellen. Damit wir die richtige Entscheidung
+        Liebe/r Sportler/in,<br></br> damit du auf unserer Website noch
+        schneller an deine Lieblingsprodukte kommst, wollen wir für dich eine
+        neue Navigationsstruktur erstellen. Damit wir die richtige Entscheidung
         treffen haben wir diese kurze Umfrage erstellt.
       </p>
       <p
