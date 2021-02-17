@@ -4,23 +4,34 @@ import "./index.css";
 function TestInfo(props) {
   return (
     <div className="testInfo">
-      <h2 className="testInfo__title">the task</h2>
+      <h2 className="testInfo__title">Wir testen eine neue Navigation!</h2>
       <p className="testInfo__paragraph">
-        In the test you will be requested to look for a product. The goal is to
-        use the <strong>Menu</strong> and <strong>click the Category</strong>{" "}
-        you expect to find the product in.
+        Liebe Sportler,<br></br> damit du auf unserer Website noch schneller an
+        deine Lieblingsprodukte kommst, wollen wir für dich eine neue
+        Navigationsstruktur erstellen. Damit wir die richtige Entscheidung
+        treffen haben wir diese kurze Umfrage erstellt.
+      </p>
+      <p
+        className="testInfo__paragraph"
+        style={{ textDecoration: "underline", marginTop: "20px" }}
+      >
+        Wie funktioniert die Umfrage?
       </p>
       <p className="testInfo__paragraph">
-        You will have to do this a couple of times, the menu will change during
-        the different tasks. If you click the category you will continue to the
-        next task.
+        Dir werden Schritt für Schritt unterschiedliche Produkte angezeigt.{" "}
+        <strong>
+          Das Ziel ist, dass du so schnell wie möglich auf die Kategorie
+          klickst, in der du das gesuchte Produkt vermuten würdest.
+        </strong>{" "}
+        Insgesamt werden 4 Produkte mit unterschiedlichen Menüs abgefragt.
       </p>
+
       <a
         href="javascript:void(0);"
-        className="testInfo__cta"
+        className="testInfo__cta cta"
         onClick={props.onClick}
       >
-        Let's Start {"(:"}
+        Los geht’s {"(:"}
       </a>
     </div>
   );

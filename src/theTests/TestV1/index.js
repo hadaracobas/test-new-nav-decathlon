@@ -64,6 +64,134 @@ function TestV1() {
     nextStepHandleOnClick();
   };
 
+  /* -------------------- */
+  const userSelectedTask1HandleOnClickTopCategorySportarten = (e) => {
+    setTask1RunningShoes(e.target.textContent + " (Sportarten)");
+    endCountingTimeTask1Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask1HandleOnClickTopCategoryDamen = (e) => {
+    setTask1RunningShoes(e.target.textContent + " (Damen)");
+    endCountingTimeTask1Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask1HandleOnClickTopCategoryHerren = (e) => {
+    setTask1RunningShoes(e.target.textContent + " (Herren)");
+    endCountingTimeTask1Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask1HandleOnClickTopCategoryKinder = (e) => {
+    setTask1RunningShoes(e.target.textContent + " (Kinder)");
+    endCountingTimeTask1Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask1HandleOnClickTopCategorySportzubehor = (e) => {
+    setTask1RunningShoes(e.target.textContent + " (Sportzubehör)");
+    endCountingTimeTask1Func();
+    nextStepHandleOnClick();
+  };
+
+  //--
+
+  const userSelectedTask2HandleOnClickTopCategorySportarten = (e) => {
+    setTask2MountainBike(e.target.textContent + " (Sportarten)");
+    endCountingTimeTask2Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask2HandleOnClickTopCategoryDamen = (e) => {
+    setTask2MountainBike(e.target.textContent + " (Damen)");
+    endCountingTimeTask2Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask2HandleOnClickTopCategoryHerren = (e) => {
+    setTask2MountainBike(e.target.textContent + " (Herren)");
+    endCountingTimeTask2Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask2HandleOnClickTopCategoryKinder = (e) => {
+    setTask2MountainBike(e.target.textContent + " (Kinder)");
+    endCountingTimeTask2Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask2HandleOnClickTopCategorySportzubehor = (e) => {
+    setTask2MountainBike(e.target.textContent + " (Sportzubehör)");
+    endCountingTimeTask2Func();
+    nextStepHandleOnClick();
+  };
+
+  //--
+
+  const userSelectedTask3HandleOnClickTopCategorySportarten = (e) => {
+    setTask3Weights(e.target.textContent + " (Sportarten)");
+    endCountingTimeTask3Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask3HandleOnClickTopCategoryDamen = (e) => {
+    setTask3Weights(e.target.textContent + " (Damen)");
+    endCountingTimeTask3Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask3HandleOnClickTopCategoryHerren = (e) => {
+    setTask3Weights(e.target.textContent + " (Herren)");
+    endCountingTimeTask3Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask3HandleOnClickTopCategoryKinder = (e) => {
+    setTask3Weights(e.target.textContent + " (Kinder)");
+    endCountingTimeTask3Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask3HandleOnClickTopCategorySportzubehor = (e) => {
+    setTask3Weights(e.target.textContent + " (Sportzubehör)");
+    endCountingTimeTask3Func();
+    nextStepHandleOnClick();
+  };
+
+  //--
+
+  const userSelectedTask4HandleOnClickTopCategorySportarten = (e) => {
+    setTask4SleepingBag(e.target.textContent + " (Sportarten)");
+    endCountingTimeTask4Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask4HandleOnClickTopCategoryDamen = (e) => {
+    setTask4SleepingBag(e.target.textContent + " (Damen)");
+    endCountingTimeTask4Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask4HandleOnClickTopCategoryHerren = (e) => {
+    setTask4SleepingBag(e.target.textContent + " (Herren)");
+    endCountingTimeTask4Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask4HandleOnClickTopCategoryKinder = (e) => {
+    setTask4SleepingBag(e.target.textContent + " (Kinder)");
+    endCountingTimeTask4Func();
+    nextStepHandleOnClick();
+  };
+
+  const userSelectedTask4HandleOnClickTopCategorySportzubehor = (e) => {
+    setTask4SleepingBag(e.target.textContent + " (Sportzubehör)");
+    endCountingTimeTask4Func();
+    nextStepHandleOnClick();
+  };
+  /* -------------------- */
+
   const endCountingTimeTask1Func = () => {
     setEndCountingTimeTask1(startCountingTime + "s");
     clearInterval(intervalState);
@@ -201,13 +329,27 @@ function TestV1() {
         <TestInfo onClick={nextStepHandleOnClick} />
       ) : stepNumber === 2 ? (
         <Task
-          taskTitle="Please look for running shoes"
+          taskTitle="Wo würdest du nach Laufschuhen suchen?"
           onClick={userStartTask1HandleOnClick}
         />
       ) : stepNumber === 3 ? (
         <HeaderDesktop
           relNav={1}
-          onClickgetCategoryName={userSelectedTask1HandleOnClick}
+          onClickgetCategoryNameSportarten={
+            userSelectedTask1HandleOnClickTopCategorySportarten
+          }
+          onClickgetCategoryNameDamen={
+            userSelectedTask1HandleOnClickTopCategoryDamen
+          }
+          onClickgetCategoryNameHerren={
+            userSelectedTask1HandleOnClickTopCategoryHerren
+          }
+          onClickgetCategoryNameKinder={
+            userSelectedTask1HandleOnClickTopCategoryKinder
+          }
+          onClickgetCategoryNameSportzubehor={
+            userSelectedTask1HandleOnClickTopCategorySportzubehor
+          }
         />
       ) : stepNumber === 4 ? (
         <UserSelected
@@ -217,13 +359,27 @@ function TestV1() {
         />
       ) : stepNumber === 5 ? (
         <Task
-          taskTitle="Please look for a mountain bike"
+          taskTitle="Wo würdest du nach Mountainbike suchen?"
           onClick={userStartTask2HandleOnClick}
         />
       ) : stepNumber === 6 ? (
         <HeaderDesktop
           relNav={1}
-          onClickgetCategoryName={userSelectedTask2HandleOnClick}
+          onClickgetCategoryNameSportarten={
+            userSelectedTask2HandleOnClickTopCategorySportarten
+          }
+          onClickgetCategoryNameDamen={
+            userSelectedTask2HandleOnClickTopCategoryDamen
+          }
+          onClickgetCategoryNameHerren={
+            userSelectedTask2HandleOnClickTopCategoryHerren
+          }
+          onClickgetCategoryNameKinder={
+            userSelectedTask2HandleOnClickTopCategoryKinder
+          }
+          onClickgetCategoryNameSportzubehor={
+            userSelectedTask2HandleOnClickTopCategorySportzubehor
+          }
         />
       ) : stepNumber === 7 ? (
         <UserSelected
@@ -233,13 +389,27 @@ function TestV1() {
         />
       ) : stepNumber === 8 ? (
         <Task
-          taskTitle="Please look for weights"
+          taskTitle="Wo würdest du nach Gewichte suchen?"
           onClick={userStartTask3HandleOnClick}
         />
       ) : stepNumber === 9 ? (
         <HeaderDesktop
           relNav={1}
-          onClickgetCategoryName={userSelectedTask3HandleOnClick}
+          onClickgetCategoryNameSportarten={
+            userSelectedTask3HandleOnClickTopCategorySportarten
+          }
+          onClickgetCategoryNameDamen={
+            userSelectedTask3HandleOnClickTopCategoryDamen
+          }
+          onClickgetCategoryNameHerren={
+            userSelectedTask3HandleOnClickTopCategoryHerren
+          }
+          onClickgetCategoryNameKinder={
+            userSelectedTask3HandleOnClickTopCategoryKinder
+          }
+          onClickgetCategoryNameSportzubehor={
+            userSelectedTask3HandleOnClickTopCategorySportzubehor
+          }
         />
       ) : stepNumber === 10 ? (
         <UserSelected
@@ -249,13 +419,27 @@ function TestV1() {
         />
       ) : stepNumber === 11 ? (
         <Task
-          taskTitle="Please look for a sleeping bag"
+          taskTitle="Wo würdest du nach Schlafsack suchen?"
           onClick={userStartTask4HandleOnClick}
         />
       ) : stepNumber === 12 ? (
         <HeaderDesktop
           relNav={1}
-          onClickgetCategoryName={userSelectedTask4HandleOnClick}
+          onClickgetCategoryNameSportarten={
+            userSelectedTask4HandleOnClickTopCategorySportarten
+          }
+          onClickgetCategoryNameDamen={
+            userSelectedTask4HandleOnClickTopCategoryDamen
+          }
+          onClickgetCategoryNameHerren={
+            userSelectedTask4HandleOnClickTopCategoryHerren
+          }
+          onClickgetCategoryNameKinder={
+            userSelectedTask4HandleOnClickTopCategoryKinder
+          }
+          onClickgetCategoryNameSportzubehor={
+            userSelectedTask4HandleOnClickTopCategorySportzubehor
+          }
         />
       ) : stepNumber === 13 ? (
         <UserSelected

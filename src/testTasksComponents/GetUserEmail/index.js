@@ -5,25 +5,26 @@ function GetUserEmail(props) {
   return (
     <div className="getUserEmail taskComponentContainer">
       <h2 className="title">
-        DO YOU WANT TO HAVE A CHANCE TO WIN A 50€ GIFT CARD?
+        Willst du einen € 50,- Decathlon Gutschein gewinnen?
       </h2>
-      <label for="getUserEmailInput">Leave your email here: </label>
+      <label for="getUserEmailInput">E-Mail für das Gewinnspiel: </label>
       <input
         id="getUserEmailInput"
         type="email"
-        placeholder="enter email"
+        placeholder="Füge hier deine E-Mail-Adresse ein"
         onChange={props.emailOnChange}
       />
       <p className="getUserEmail__notePragraph">
-        * By entering your email you agree to the Privacy Policy, we will only
-        use your email to contact the winner.
+        * Mit Angabe deiner E-Mail stimmst du unseren Datenschutzbestimmungen
+        zu. Wir verwenden die E-Mail-Adresse ausschließlich, um die Gewinner zu
+        kontaktieren.
       </p>
       <a
         href="javascript:void(0);"
         className="cta"
         onClick={props.finishOnClick}
       >
-        Finish and send
+        Abschließen und am Gewinnspiel teilnehmen
       </a>
     </div>
   );

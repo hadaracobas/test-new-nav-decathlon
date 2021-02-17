@@ -1,5 +1,6 @@
 .userNavPrefer__version {
   margin-bottom: 36px;
+  border: 1px solid lightgray;
 }
 
 .userNavPrefer__versionTitle {
@@ -17,5 +18,4 @@
 .userNavPrefer__versionImg {
   max-width: 80%;
   height: auto;
-  border: 1px solid lightgray;
 }

@@ -27,11 +27,16 @@
   opacity: 0;
 }
 
+.header-desktop__search {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .header-desktop svg path {
   color: lightgray !important;
 }
 
-.header-desktop__logo img {
+.header-desktop__logo svg {
   height: 40px;
   margin-right: 50px;
 }

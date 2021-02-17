@@ -7,10 +7,10 @@ function Task(props) {
       <h2 className="task__title">{props.taskTitle}</h2>
       <a
         href="javascript:void(0);"
-        className="task__cta"
+        className="task__cta cta"
         onClick={props.onClick}
       >
-        start now
+        Jetzt suchen
       </a>
     </div>
   );
