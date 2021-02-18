@@ -332,7 +332,7 @@ function TestV4() {
         <TestInfo onClick={nextStepHandleOnClick} />
       ) : stepNumber === 2 ? (
         <Task
-          taskTitle="Wo würdest du nach Laufschuhen suchen?"
+          taskTitle='Wo würdest du das folgende Produkt suchen: "Laufschuhen"'
           onClick={userStartTask1HandleOnClick}
         />
       ) : stepNumber === 3 ? (
@@ -362,7 +362,7 @@ function TestV4() {
         />
       ) : stepNumber === 5 ? (
         <Task
-          taskTitle="Wo würdest du nach Mountainbike suchen?"
+          taskTitle='Wo würdest du das folgende Produkt suchen: "Mountainbike"'
           onClick={userStartTask2HandleOnClick}
         />
       ) : stepNumber === 6 ? (
@@ -392,7 +392,7 @@ function TestV4() {
         />
       ) : stepNumber === 8 ? (
         <Task
-          taskTitle="Wo würdest du nach Gewichte suchen?"
+          taskTitle='Wo würdest du das folgende Produkt suchen: "Gewicht"'
           onClick={userStartTask3HandleOnClick}
         />
       ) : stepNumber === 9 ? (
@@ -422,7 +422,7 @@ function TestV4() {
         />
       ) : stepNumber === 11 ? (
         <Task
-          taskTitle="Wo würdest du nach Schlafsack suchen?"
+          taskTitle='Wo würdest du das folgende Produkt suchen: "Schlafsack"'
           onClick={userStartTask4HandleOnClick}
         />
       ) : stepNumber === 12 ? (

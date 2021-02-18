@@ -9,7 +9,7 @@ function TestInfo(props) {
         Liebe/r Sportler/in,<br></br> damit du auf unserer Website noch
         schneller an deine Lieblingsprodukte kommst, wollen wir für dich eine
         neue Navigationsstruktur erstellen. Damit wir die richtige Entscheidung
-        treffen haben wir diese kurze Umfrage erstellt.
+        treffen, haben wir diese kurze Umfrage erstellt.
       </p>
       <p
         className="testInfo__paragraph"
