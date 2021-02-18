@@ -201,7 +201,8 @@ function Nav2Desktop(props) {
                   href="javascript:void(0)"
                   onClick={props.onClickgetCategoryNameSportarten}
                 >
-                  Fitness {"&"} Training
+                  Fitness {"&"}
+                  <br></br>Training
                 </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
@@ -320,7 +321,8 @@ function Nav2Desktop(props) {
                   href="javascript:void(0)"
                   onClick={props.onClickgetCategoryNameSportarten}
                 >
-                  Team- {"&"} Schlägersport
+                  Team {"&"}
+                  <br></br>Schlägersport
                 </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
@@ -453,7 +455,8 @@ function Nav2Desktop(props) {
                   href="javascript:void(0)"
                   onClick={props.onClickgetCategoryNameSportarten}
                 >
-                  Freizeit {"&"} Spiele
+                  Freizeit {"&"}
+                  <br></br>Spiele
                 </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>
@@ -511,7 +514,7 @@ function Nav2Desktop(props) {
                   href="javascript:void(0)"
                   onClick={props.onClickgetCategoryNameSportarten}
                 >
-                  Sportarten Überblick
+                  Sportarten<br></br> Überblick
                 </a>
                 <ul className="nav2Desktop__subsubmenu">
                   <li>

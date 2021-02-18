@@ -23,7 +23,7 @@ function TestInfo(props) {
           Das Ziel ist, dass du so schnell wie möglich auf die Kategorie
           klickst, in der du das gesuchte Produkt vermuten würdest.
         </strong>{" "}
-        Insgesamt werden 4 Produkte mit unterschiedlichen Menüs abgefragt.
+        Insgesamt werden 4 Produkte abgefragt.
       </p>
 
       <a

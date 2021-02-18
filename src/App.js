@@ -10,10 +10,18 @@ import Task from "./testTasksComponents/Task";
 import TestInfo from "./testTasksComponents/TestInfo";
 import UserNavPrefer from "./testTasksComponents/UserNavPrefer";
 import UserSelected from "./testTasksComponents/UserSelected";
+import RandomVTest from "./theTests/RandomVTest";
 import TestV1 from "./theTests/TestV1";
 import TestV2 from "./theTests/TestV2";
 import TestV3 from "./theTests/TestV3";
 import TestV4 from "./theTests/TestV4";
+import LoadingProg from "./materialUiComponents/LoadingProg";
+
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import LaptopMacOutlinedIcon from "@material-ui/icons/LaptopMacOutlined";
+import ScreenRotationOutlinedIcon from "@material-ui/icons/ScreenRotationOutlined";
+import TabletMacOutlinedIcon from "@material-ui/icons/TabletMacOutlined";
 
 function App() {
   const [navName, setNavName] = useState(1);
@@ -42,9 +50,40 @@ function App() {
             <EndPage />
             <TestV4 />
             <Popup />
+             <RandomVTest />
       */}
-
-      <TestV4 />
+      <div className="app__messageSmallScreen">
+        <p>
+          Bitte fülle diese Umfrage auf einem Laptop oder einem Gerät mit einem
+          größeren Bildschirm aus.
+        </p>
+        <div className="app__messageSmallScreen--icons">
+          <ScreenRotationOutlinedIcon fontSize="large" />
+          <TabletMacOutlinedIcon fontSize="large" />
+          <LaptopMacOutlinedIcon fontSize="large" />
+        </div>
+      </div>
+      <div className="app__displyTests">
+        <Router>
+          <Switch>
+            <Route path="/" exact>
+              <RandomVTest />
+            </Route>
+            <Route path="/test1">
+              <TestV1 />
+            </Route>
+            <Route path="/test2">
+              <TestV2 />
+            </Route>
+            <Route path="/test3">
+              <TestV3 />
+            </Route>
+            <Route path="/test4">
+              <TestV4 />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
     </div>
   );
 }

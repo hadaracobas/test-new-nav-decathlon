@@ -27,10 +27,10 @@ function RateDifficulty(props) {
     <div className="rateDifficulty taskComponentContainer">
       <h2 className="rateDifficulty__title title">
         {" "}
-        How easy was it to find the category in the menu?{" "}
+        Wie einfach war es für dich die passende Kategorie zu finden?{" "}
       </h2>
       <div className="rateDifficulty__rateWrapper">
-        <span className="rateDifficulty__rateDisplayDiff">very hard</span>
+        <span className="rateDifficulty__rateDisplayDiff">sehr schwierig</span>
         <span
           className="rateDifficulty__rate"
           style={
@@ -90,7 +90,7 @@ function RateDifficulty(props) {
           className="rateDifficulty__rateDisplayDiff"
           onClick={props.rateDiffOnClick}
         >
-          very easy
+          sehr einfach
         </span>
       </div>
       <a
@@ -98,7 +98,7 @@ function RateDifficulty(props) {
         className="cta rateDifficulty__cta"
         onClick={props.continueOnClick}
       >
-        continue
+        Weiter
       </a>
     </div>
   );

@@ -12,7 +12,7 @@ import EndPage from "../../testTasksComponents/EndPage";
 
 import axios from "axios";
 
-function TestV1() {
+function TestV3() {
   // GENERAL STATES
   const [stepNumber, setStepNumber] = useState(1);
   const [startCountingTime, setStartCountingTime] = useState(0);
@@ -35,6 +35,7 @@ function TestV1() {
   const [userNavPrefer, setUserNavPrefer] = useState();
   // GET USER EMAIL
   const [getUserEmail, setGetUserEmail] = useState();
+  const [loadingToggle, setLoadingToggle] = useState(false);
 
   // GENERAL FUNCTION
   const nextStepHandleOnClick = () => {
@@ -294,6 +295,7 @@ function TestV1() {
   // SEND DATA TO DATABASE - GOOGLE SHEET
   const submitDataToDatabase = (e) => {
     e.preventDefault();
+    setLoadingToggle(true);
     axios
       .post(
         "https://sheet.best/api/sheets/b2fa7a6e-f53d-40bf-86f7-34557ebc33b9",
@@ -314,11 +316,12 @@ function TestV1() {
       )
       .then(function (response) {
         console.log(response);
-
+        setLoadingToggle(false);
         nextStepHandleOnClick();
       })
       .catch(function (error) {
         console.log(error);
+        setLoadingToggle(false);
         alert("An error has occurred");
       });
   };
@@ -463,6 +466,7 @@ function TestV1() {
         <GetUserEmail
           emailOnChange={(e) => setGetUserEmail(e.target.value)}
           finishOnClick={submitDataToDatabase}
+          loading={loadingToggle}
         />
       ) : stepNumber === 17 ? (
         <EndPage />
@@ -471,4 +475,4 @@ function TestV1() {
   );
 }
 
-export default TestV1;
+export default TestV3;

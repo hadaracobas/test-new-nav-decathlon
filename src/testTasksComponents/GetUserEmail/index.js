@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LoadingProg from "../../materialUiComponents/LoadingProg";
 import Popup from "../../materialUiComponents/Popup";
 import "./index.css";
 
@@ -39,6 +40,12 @@ function GetUserEmail(props) {
       >
         Abschließen und am Gewinnspiel teilnehmen
       </a>
+      {props.loading && (
+        <div className="getUserEmail__loadingWrapper">
+          <LoadingProg />
+        </div>
+      )}
+
       <Popup open={openPop} handleClose={handleClosePop} />
     </div>
   );

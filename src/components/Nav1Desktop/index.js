@@ -152,7 +152,8 @@ function Nav1Desktop(props) {
                   href="javascript:void(0)"
                   onClick={props.onClickgetCategoryNameSportarten}
                 >
-                  Bergsport {"&"} Outdoor
+                  Bergsport {"&"}
+                  <br></br> Outdoor
                 </a>
                 <ul className="nav1Desktop__subsubmenu">
                   <li>
@@ -214,7 +215,10 @@ function Nav1Desktop(props) {
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Fitness {"&"} Training</a>
+                <a href="javascript:void(0)">
+                  Fitness {"&"}
+                  <br></br>Training
+                </a>
                 <ul className="nav1Desktop__subsubmenu">
                   <li>
                     <a
@@ -399,7 +403,8 @@ function Nav1Desktop(props) {
                   href="javascript:void(0)"
                   onClick={props.onClickgetCategoryNameSportarten}
                 >
-                  Schlager {"&"} Teamsport
+                  Schlager {"&"}
+                  <br></br>Teamsport
                 </a>
                 <ul className="nav1Desktop__subsubmenu">
                   <li>
@@ -539,7 +544,8 @@ function Nav1Desktop(props) {
                   href="javascript:void(0)"
                   onClick={props.onClickgetCategoryNameSportarten}
                 >
-                  Freizeit {"&"} Spielen
+                  Freizeit {"&"}
+                  <br></br>Spielen
                 </a>
                 <ul className="nav1Desktop__subsubmenu">
                   <li>

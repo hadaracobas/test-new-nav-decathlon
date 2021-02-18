@@ -55,7 +55,18 @@ export default function Popup(props) {
         }}
       >
         <Fade in={props.open}>
-          <div className={classes.paper}>
+          <div className={classes.paper} style={{ position: "relative" }}>
+            <p
+              style={{
+                position: "absolute",
+                top: "3px",
+                right: "8px",
+                cursor: "pointer",
+              }}
+              onClick={props.handleClose}
+            >
+              x
+            </p>
             <h2 id="transition-modal-title" style={{ marginBottom: "20px" }}>
               TEILNAHMEBEDINGUNGEN GEWINNSPIEL
             </h2>

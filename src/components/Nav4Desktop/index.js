@@ -85,7 +85,8 @@ function Nav4Desktop(props) {
                   href="javascript:void(0)"
                   onClick={props.onClickgetCategoryNameSportarten}
                 >
-                  Bergsport {"&"} Outdoor
+                  Bergsport {"&"}
+                  <br></br>Outdoor
                 </a>
                 <ul className="nav4Desktop__subsubmenu">
                   <li>
@@ -151,7 +152,8 @@ function Nav4Desktop(props) {
                   href="javascript:void(0)"
                   onClick={props.onClickgetCategoryNameSportarten}
                 >
-                  Fitness {"&"} Training
+                  Fitness {"&"}
+                  <br></br>Training
                 </a>
                 <ul className="nav4Desktop__subsubmenu">
                   <li>
@@ -191,7 +193,8 @@ function Nav4Desktop(props) {
                       href="javascript:void(0)"
                       onClick={props.onClickgetCategoryNameSportarten}
                     >
-                      Tanzen {"&"} Gymnastik
+                      Tanzen {"&"}
+                      <br></br>Gymnastik
                     </a>
                   </li>
                   <li>
@@ -209,7 +212,8 @@ function Nav4Desktop(props) {
                   href="javascript:void(0)"
                   onClick={props.onClickgetCategoryNameSportarten}
                 >
-                  Freizeit {"&"} Spielen
+                  Freizeit {"&"}
+                  <br></br>Spielen
                 </a>
                 <ul className="nav4Desktop__subsubmenu">
                   <li>
@@ -387,7 +391,8 @@ function Nav4Desktop(props) {
                   href="javascript:void(0)"
                   onClick={props.onClickgetCategoryNameSportarten}
                 >
-                  Schläger-{"&"} Teamsport
+                  Schläger {"&"}
+                  <br></br>Teamsport
                 </a>
                 <ul className="nav4Desktop__subsubmenu">
                   <li>
