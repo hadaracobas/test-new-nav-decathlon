@@ -1,0 +1,20 @@
+.display-data {
+  text-align: center;
+}
+
+.display-data__tableWrapper {
+  max-height: 400px;
+  max-width: 90%;
+  margin: 10px auto 100px auto;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.display-data__pullDataBtn {
+  color: #242323;
+  background-color: #ffea28;
+  padding: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0;
+}

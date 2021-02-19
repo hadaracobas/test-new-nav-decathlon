@@ -22,6 +22,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LaptopMacOutlinedIcon from "@material-ui/icons/LaptopMacOutlined";
 import ScreenRotationOutlinedIcon from "@material-ui/icons/ScreenRotationOutlined";
 import TabletMacOutlinedIcon from "@material-ui/icons/TabletMacOutlined";
+import DisplayData from "./testTasksComponents/DisplayData";
 
 function App() {
   const [navName, setNavName] = useState(1);
@@ -80,6 +81,9 @@ function App() {
             </Route>
             <Route path="/test4">
               <TestV4 />
+            </Route>
+            <Route path="/display-data">
+              <DisplayData />
             </Route>
           </Switch>
         </Router>
