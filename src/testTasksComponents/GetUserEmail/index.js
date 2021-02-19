@@ -33,13 +33,15 @@ function GetUserEmail(props) {
         zu. Wir verwenden die E-Mail-Adresse ausschließlich, um die Gewinner zu
         kontaktieren.
       </p>
-      <a
-        href="javascript:void(0);"
-        className="cta"
-        onClick={props.finishOnClick}
-      >
-        Abschließen und am Gewinnspiel teilnehmen
-      </a>
+      {props.displayPostBtn && (
+        <a
+          href="javascript:void(0);"
+          className="cta"
+          onClick={props.finishOnClick}
+        >
+          Abschließen und am Gewinnspiel teilnehmen
+        </a>
+      )}
       {props.loading && (
         <div className="getUserEmail__loadingWrapper">
           <LoadingProg />

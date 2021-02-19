@@ -36,6 +36,7 @@ function TestV1() {
   // GET USER EMAIL
   const [getUserEmail, setGetUserEmail] = useState();
   const [loadingToggle, setLoadingToggle] = useState(false);
+  const [displayPostBtn, setDisplayPostBtn] = useState(true);
 
   // GENERAL FUNCTION
   const nextStepHandleOnClick = () => {
@@ -296,6 +297,7 @@ function TestV1() {
   const submitDataToDatabase = (e) => {
     e.preventDefault();
     setLoadingToggle(true);
+    setDisplayPostBtn(false);
     axios
       .post(
         "https://sheet.best/api/sheets/b2fa7a6e-f53d-40bf-86f7-34557ebc33b9",
@@ -322,6 +324,7 @@ function TestV1() {
       .catch(function (error) {
         console.log(error);
         setLoadingToggle(false);
+        setDisplayPostBtn(true);
         alert("An error has occurred");
       });
   };
@@ -467,6 +470,7 @@ function TestV1() {
           emailOnChange={(e) => setGetUserEmail(e.target.value)}
           finishOnClick={submitDataToDatabase}
           loading={loadingToggle}
+          displayPostBtn={displayPostBtn}
         />
       ) : stepNumber === 17 ? (
         <EndPage />
