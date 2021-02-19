@@ -60,8 +60,7 @@ export default function TableOfData(props) {
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Email</StyledTableCell>
-            <StyledTableCell>Laufschuhen</StyledTableCell>
+            <StyledTableCell>Laufschuhe</StyledTableCell>
             <StyledTableCell>Mountainbike</StyledTableCell>
             <StyledTableCell>Gewicht</StyledTableCell>
             <StyledTableCell>Schlafsack</StyledTableCell>
@@ -75,9 +74,6 @@ export default function TableOfData(props) {
         <TableBody>
           {props.data.map((row, index) => (
             <StyledTableRow key={index}>
-              <StyledTableCell component="th" scope="row">
-                {row.email}
-              </StyledTableCell>
               <StyledTableCell>
                 {row.lookForRunningShoesAnswer}{" "}
                 <small>{row.lookForRunningShoesAnswerTime}</small>

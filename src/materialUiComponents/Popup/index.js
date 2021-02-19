@@ -94,14 +94,7 @@ export default function Popup(props) {
               <br></br>
               5. Die Gewinner werden nach dem Ende des Gewinnspiels unter
               Ausschluss der Öffentlichkeit per Zufallslos ermittelt und bis
-              5.03.2021 mittels E-Mail verständigt. Sämtliche Teilnehmer werden
-              über das Ergebnis des Gewinnspiels per E-Mail benachrichtigt und
-              stimmen dieser Benachrichtigung ausdrücklich zu. Die Gewinner
-              müssen innerhalb von 3 Werktagen (ab Gewinnbenachrichtigung) ihre
-              Kontakt- und Adressdaten per Mail rückmelden. Sollten die Gewinner
-              die Annahme des Gewinns in dieser Zeit nicht bestätigen, verfällt
-              ihr Anspruch auf den Gewinn ersatzlos. Eine Verpflichtung zur
-              Annahme des Gewinns besteht nicht.
+              5.03.2021 mittels E-Mail verständigt.
               <br></br>
               <br></br>
               <br></br>

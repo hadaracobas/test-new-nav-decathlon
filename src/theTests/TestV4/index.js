@@ -335,7 +335,7 @@ function TestV4() {
         <TestInfo onClick={nextStepHandleOnClick} />
       ) : stepNumber === 2 ? (
         <Task
-          taskTitle='Wo würdest du das folgende Produkt suchen: "Laufschuhen"'
+          taskTitle='Wo würdest du das folgende Produkt suchen: "Laufschuhe"'
           onClick={userStartTask1HandleOnClick}
         />
       ) : stepNumber === 3 ? (
@@ -460,19 +460,13 @@ function TestV4() {
           continueOnClick={nextStepHandleOnClick}
         />
       ) : stepNumber === 15 ? (
-        <UserNavPrefer
-          navVersionOnClick={getUserNavPreferOnClickFunc}
-          userNavPrefer={userNavPrefer}
-          continueOnClick={nextStepHandleOnClick}
-        />
-      ) : stepNumber === 16 ? (
         <GetUserEmail
           emailOnChange={(e) => setGetUserEmail(e.target.value)}
           finishOnClick={submitDataToDatabase}
           loading={loadingToggle}
           displayPostBtn={displayPostBtn}
         />
-      ) : stepNumber === 17 ? (
+      ) : stepNumber === 16 ? (
         <EndPage />
       ) : null}
     </div>
